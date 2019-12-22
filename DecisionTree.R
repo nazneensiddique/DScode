@@ -16,3 +16,4 @@ summary(model)
 pred<-predict.C5.0(model,testing[,-5])
 a<-table(testing$Species,pred)
 sum(diag(a))/sum(a)
+.
