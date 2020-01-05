@@ -1,0 +1,5 @@
+library(gdata)
+pca<-princomp(PCA[,2:7], cor = TRUE,scores = TRUE, covmat = NULL) #Princomp=principal components, cor=correlation, covmat=covariance matrix
+summary(pca)
+pca$scores
+pca$loadings
